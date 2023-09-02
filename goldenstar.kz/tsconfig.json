@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "rootDir": "./",
+    "baseUrl": "src",
+    "paths": {
+      "common/*": ["common/*"]
+    },
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
     /* Projects */
@@ -103,6 +108,7 @@
   },
   "include": [
     "./src/**/*",
+    "./src/declaration.d.ts",
     "./gatsby-node.ts",
     "./gatsby-config.ts",
     "./plugins/**/*"
