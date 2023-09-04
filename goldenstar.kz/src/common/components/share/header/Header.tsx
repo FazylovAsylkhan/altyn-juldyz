@@ -3,38 +3,46 @@ import { Link } from 'gatsby';
 import LogoIcon from 'assets/images/logo.svg';
 
 export function Header(): React.JSX.Element {
+  const data = [
+    {
+      text: 'Главная',
+      link: '/',
+    },
+    {
+      text: 'Направления',
+      link: '/n',
+    },
+    {
+      text: 'О нас',
+      link: '/o',
+    },
+    {
+      text: 'Вакансии',
+      link: '/v',
+    },
+    {
+      text: 'Контакты',
+      link: '/contacts',
+    },
+  ];
   return (
-    <header className="mb-10 flex  items-center justify-between rounded-lg border-b-2  p-5 drop-shadow-md">
-      <div className="w-2/5 pl-11">
-        <LogoIcon className="h-full w-40" />
-      </div>
-      <ul className="flex w-2/5 justify-between">
-        <li>
-          <Link to="/" className="px-2">
-            Главная
-          </Link>
-        </li>
-        <li>
-          <a href="#" className="px-2">
-            Направления
-          </a>
-        </li>
-        <li>
-          <a href="#" className="px-2">
-            О нас
-          </a>
-        </li>
-        <li>
-          <a href="#" className="px-2">
-            Вакансии
-          </a>
-        </li>
-        <li>
-          <Link to="/contacts" className="px-2">
-            Контакты
-          </Link>
-        </li>
-      </ul>
-    </header>
+    <div>
+      <header className="container mx-auto flex max-w-screen-xl  items-center justify-between rounded-lg border-b-2  p-5 drop-shadow-md">
+        <div className="w-2/5">
+          <LogoIcon className="h-full w-40" />
+        </div>
+        <ul className="flex w-2/5 justify-between">
+          {data.map((l) => {
+            return (
+              <li>
+                <Link to={l.link} className="px-2" activeClassName="text-gold">
+                  {l.text}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </header>
+    </div>
   );
 }

@@ -2,97 +2,110 @@ import * as React from 'react';
 import LogoIcon from 'assets/images/logo.svg';
 
 export function Footer(): React.JSX.Element {
+  const menu = [
+    {
+      title: 'Производство и торговля',
+      links: [
+        {
+          text: 'Швейно-обувная фабрика',
+          link: '#',
+        },
+        {
+          text: 'Средство-индивидуальной защиты',
+          link: '#',
+        },
+        {
+          text: 'Строительные инструменты и материалы',
+          link: '#',
+        },
+        {
+          text: 'Строительное оборудование',
+          link: '#',
+        },
+        {
+          text: 'Спортивные товары',
+          link: '#',
+        },
+      ],
+    },
+    {
+      title: 'Сельское хозяйство',
+      links: [
+        {
+          text: 'Разведение КРС "Абердин Ангус"',
+          link: '#',
+        },
+        {
+          text: 'Интенсивный явлочный сад',
+          link: '#',
+        },
+        {
+          text: 'Коневодство',
+          link: '#',
+        },
+        {
+          text: 'Органическое Удобрение - Биогумс',
+          link: '#',
+        },
+        {
+          text: 'Рыбоводство',
+          link: '#',
+        },
+        {
+          text: 'Разведение МРС "Романовские овцы"',
+          link: '#',
+        },
+      ],
+    },
+    {
+      title: 'Строительство и проектирование',
+      links: [
+        {
+          text: 'Жилищное строительство',
+          link: '#',
+        },
+        {
+          text: 'Строительство инженерных сетей и коммуникаций',
+          link: '#',
+        },
+        {
+          text: 'Аренда складских помещений класса А и С',
+          link: '#',
+        },
+      ],
+    },
+  ];
+
   return (
-    <footer className="flex  rounded-lg  border-t-2 p-10">
-      <div className="grid w-4/5 grid-cols-2">
-        <ul>
-          <strong className="mb-3 block font-serif text-sm">
-            Производство и торговля
-          </strong>
-          <li>
-            <a href="#" className="mb-8 text-gray-600">
-              Швейно-обувная фабрика
-            </a>
-          </li>
-          <li>
-            <a href="#" className="mb-8 text-gray-600">
-              Средство-индивидуальной защиты
-            </a>
-          </li>
-          <li>
-            <a href="#" className="mb-8 text-gray-600">
-              Строительные инструменты и материалы
-            </a>
-          </li>
-          <li>
-            <a href="#" className="mb-8 text-gray-600">
-              Строительное оборудование
-            </a>
-          </li>
-          <li>
-            <a href="#" className="mb-8 text-gray-600">
-              Спортивные товары
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <strong className="mb-3 block font-serif text-sm">
-            Сельское хозяйство
-          </strong>
-          <li>
-            <a href="#" className=" mb-8 text-gray-600">
-              Разведение КРС "Абердин Ангус" (племенной)
-            </a>
-          </li>
-          <li>
-            <a href="#" className=" mb-8 text-gray-600">
-              Интенсивный явлочный сад
-            </a>
-          </li>
-          <li>
-            <a href="#" className=" mb-8 text-gray-600">
-              Коневодство
-            </a>
-          </li>
-          <li>
-            <a href="#" className=" mb-8 text-gray-600">
-              Органическое Удобрение - Биогумс (вермикомпост)
-            </a>
-          </li>
-          <li>
-            <a href="#" className=" mb-8 text-gray-600">
-              Рыбоводство
-            </a>
-          </li>
-          <li>
-            <a href="#" className=" mb-8 text-gray-600">
-              Разведение МРС "Романовские овцы"
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <strong className="mb-3 block font-serif text-sm">
-            Строительство и проектирование
-          </strong>
-          <li>
-            <a href="#" className="mb-8 text-gray-600">
-              Жилищное строительство
-            </a>
-          </li>
-          <li>
-            <a href="#" className="mb-8 text-gray-600">
-              Строительство инженерных сетей и коммуникаций
-            </a>
-          </li>
-          <li>
-            <a href="#" className="mb-8 text-gray-600">
-              Аренда складских помещений класса А и С
-            </a>
-          </li>
-        </ul>
+    <footer>
+      <div className="container mx-auto flex max-w-screen-xl flex-wrap rounded-lg border-t-2 px-5 py-10">
+        <div className="grid w-4/5 grid-cols-2">
+          {menu.map((m) => {
+            return (
+              <ul>
+                <strong className="mb-3 block font-serif text-sm">
+                  {m.title}
+                </strong>
+                {m.links.map((l) => {
+                  return (
+                    <li>
+                      <a href={l.link} className="mb-10 text-gray-600">
+                        {l.text}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            );
+          })}
+        </div>
+        <div className="flex w-1/5 justify-end">
+          <LogoIcon className="h-full w-40" />
+        </div>
       </div>
-      <div className="flex w-1/5 justify-end">
-        <LogoIcon className="h-full w-40" />
+      <div className="container mx-auto mt-10 flex h-16 w-full max-w-screen-xl items-center justify-between rounded-t-lg bg-gray-200 px-5 text-white">
+        <strong>2023 ALTYN JULDYZ ©</strong>
+        <strong>Все права защищены</strong>
       </div>
     </footer>
   );
