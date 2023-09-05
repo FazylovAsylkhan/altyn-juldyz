@@ -20,6 +20,7 @@
     "@heroicons/react": "^2.0.18",
     "autoprefixer": "^10.4.15",
     "gatsby": "^5.12.1",
+    "gatsby-plugin-manifest": "^5.12.0",
     "gatsby-plugin-postcss": "^6.12.0",
     "gatsby-plugin-react-svg": "^3.3.0",
     "react": "^18.2.0",

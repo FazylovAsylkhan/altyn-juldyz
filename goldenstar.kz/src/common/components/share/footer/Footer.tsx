@@ -82,13 +82,13 @@ export function Footer(): React.JSX.Element {
         <div className="grid w-4/5 grid-cols-2">
           {menu.map((m) => {
             return (
-              <ul>
-                <strong className="mb-3 block font-serif text-sm">
+              <ul key={m.title}>
+                <strong className="text-gold mb-3 block font-serif text-sm">
                   {m.title}
                 </strong>
                 {m.links.map((l) => {
                   return (
-                    <li>
+                    <li key={l.text}>
                       <a href={l.link} className="mb-10 text-gray-600">
                         {l.text}
                       </a>
@@ -103,7 +103,7 @@ export function Footer(): React.JSX.Element {
           <LogoIcon className="h-full w-40" />
         </div>
       </div>
-      <div className="container mx-auto mt-10 flex h-16 w-full max-w-screen-xl items-center justify-between rounded-t-lg bg-gray-200 px-5 text-white">
+      <div className="container mx-auto flex h-16 w-full max-w-screen-xl items-center justify-between rounded-t-lg bg-gray-200 px-5 text-white">
         <strong>2023 ALTYN JULDYZ ©</strong>
         <strong>Все права защищены</strong>
       </div>

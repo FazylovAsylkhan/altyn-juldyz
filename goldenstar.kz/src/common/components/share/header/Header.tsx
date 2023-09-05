@@ -10,21 +10,22 @@ export function Header(): React.JSX.Element {
     },
     {
       text: 'Направления',
-      link: '/n',
+      link: '/directions',
     },
     {
       text: 'О нас',
-      link: '/o',
+      link: '/about-us',
     },
     {
       text: 'Вакансии',
-      link: '/v',
+      link: '/jobs',
     },
     {
       text: 'Контакты',
       link: '/contacts',
     },
   ];
+
   return (
     <div>
       <header className="container mx-auto flex max-w-screen-xl  items-center justify-between rounded-lg border-b-2  p-5 drop-shadow-md">
@@ -34,7 +35,7 @@ export function Header(): React.JSX.Element {
         <ul className="flex w-2/5 justify-between">
           {data.map((l) => {
             return (
-              <li>
+              <li key={l.text}>
                 <Link to={l.link} className="px-2" activeClassName="text-gold">
                   {l.text}
                 </Link>

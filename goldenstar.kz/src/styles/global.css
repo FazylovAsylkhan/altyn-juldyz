@@ -13,3 +13,46 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper-pagination {
+  left: 5% !important;
+}
+.page__bullet {
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 30px;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.page__bullet::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  transform: translate(-50%, -50%);
+  content: "";
+  opacity: 0.7;
+  border-radius: 50%;
+  background-color: #232323;
+}
+.page__bullet_active {
+  border: 1px solid #D4B77C;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+.page__bullet_active::after {
+  background-color: #D4B77C;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4B77C;
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(#000, 0.5);
+}
