@@ -1,0 +1,10 @@
+::-webkit-scrollbar-thumb {
+  background: #d4b77c;
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(#000, 0.5);
+}

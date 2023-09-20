@@ -1,0 +1,7 @@
+@import './_fonts.css';
+@import './_pageSlider.css';
+@import './_scroll.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
