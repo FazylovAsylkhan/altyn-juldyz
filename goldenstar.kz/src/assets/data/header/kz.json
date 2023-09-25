@@ -65,5 +65,10 @@
       "url": "/contacts"
     }
   ],
-  "buttonLangs": ["/", "/kz", "/en", "/ tr"]
+  "buttonLangs": [
+    { "text": "Ru", "url": "/" },
+    { "text": "Kz", "url": "/kz" },
+    { "text": "En", "url": "/en" },
+    { "text": "Tr", "url": "/tr" }
+  ]
 }

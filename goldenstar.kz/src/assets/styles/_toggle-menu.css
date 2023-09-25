@@ -27,6 +27,9 @@
 .toggle__light:after, li.toggle__dark:hover::after {
   border-top-color: #fff;
 }
+.menu__toggle-y.menu__opened.toggle__dark:after {
+  border-top-color: #000000;
+}
 .toggle__dark:after {
   border-top-color: #000000;
 }

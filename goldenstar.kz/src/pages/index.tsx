@@ -56,7 +56,7 @@ const IndexPage = (
         setIsLight(isLightSlider);
         toggleClass(swiper.pagination.bullets, 'dark', isLightSlider);
       }}>
-      <Header links={links} langButtonLangs={buttonLangs} isLight={isLight} />
+      <Header links={links} buttonLangs={buttonLangs} isLight={isLight} />
       <SwiperSlide>
         <AltynJuldyz data={altynJuldyz} />
       </SwiperSlide>
@@ -92,7 +92,10 @@ export const Head: HeadFC = () => <title>Главная</title>;
 export const query = graphql`
   query PageMainQuery {
     headerJson(lang: { eq: "ru" }) {
-      buttonLangs
+      buttonLangs {
+        text
+        url
+      }
       links {
         text
         url

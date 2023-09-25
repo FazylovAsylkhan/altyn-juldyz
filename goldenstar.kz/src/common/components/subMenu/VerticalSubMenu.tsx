@@ -17,10 +17,11 @@ interface VerticalSubMenuProps {
       ];
     },
   ];
+  onHover: () => void;
 }
 
 export function VerticalSubMenu(props: VerticalSubMenuProps) {
-  const { label, links, isLight } = props;
+  const { label, links, isLight, onHover } = props;
   const [isOpened, setIsOpened] = React.useState(false);
 
   return (
@@ -29,7 +30,10 @@ export function VerticalSubMenu(props: VerticalSubMenuProps) {
         isOpened ? 'menu__opened' : ''
       } ${isLight ? 'toggle__dark' : ''}`}
       onMouseLeave={() => setIsOpened(false)}
-      onMouseMove={() => setIsOpened(true)}>
+      onMouseMove={() => {
+        setIsOpened(true);
+        onHover();
+      }}>
       {label}
       <ul
         className={`absolute -left-5 top-[1.4rem] w-[18rem] pt-[2.6rem] ${
@@ -40,7 +44,7 @@ export function VerticalSubMenu(props: VerticalSubMenuProps) {
         {links.map((link, i) => {
           const firstItemClass = isLight
             ? 'hover:border-[#E5E5E5]'
-            : 'border-softBlack';
+            : 'border-softBlack hover:border-softBlack';
           const anotherItemClass = isLight
             ? ''
             : 'hover:border-gold border-gray-100/20';
@@ -60,7 +64,7 @@ export function VerticalSubMenu(props: VerticalSubMenuProps) {
           return (
             <li
               key={link.text}
-              className={`hover:bg-gold border-t-2  border-black/10 hover:text-white ${itemClass}`}>
+              className={`hover:bg-gold border-t-2 hover:text-white ${itemClass}`}>
               <Link to={link.url} className="block px-5 py-3">
                 {link.text}
               </Link>
