@@ -55,11 +55,7 @@ export function VerticalSubMenu(props: VerticalSubMenuProps) {
               className={`hover:bg-gold border-t-2  border-black/10 hover:text-white ${
                 i !== 0
                   ? `${isLight ? '' : 'hover:border-gold border-gray-100/20'}`
-                  : `${
-                      isLight
-                        ? 'hover:border-[#D9D9D9]'
-                        : 'hover:border-softBlack'
-                    }`
+                  : `${isLight ? 'hover:border-[#E5E5E5]' : 'border-softBlack'}`
               }`}>
               <Link to={link.url} className="block px-5 py-3">
                 {link.text}
