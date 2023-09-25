@@ -1,5 +1,5 @@
-import * as React from "react";
-import { GatsbyImage, ImageDataLike, getImage } from "gatsby-plugin-image";
+import * as React from 'react';
+import { GatsbyImage, ImageDataLike, getImage } from 'gatsby-plugin-image';
 
 export interface ValuesProps {
   data: {
@@ -18,17 +18,17 @@ export function Values(props: ValuesProps): React.JSX.Element {
     <>
       <div className="container mx-auto h-screen max-w-screen-xl">
         <div className="mt-[10rem]">
-          <h2 className="mb-4 text-4xl font-serif font-bold text-white">
+          <h2 className="mb-4 font-serif text-4xl font-bold text-white">
             {title}
           </h2>
-          <p className="text-white w-7/12">{description}</p>
+          <p className="w-7/12 text-white">{description}</p>
         </div>
-        <div className="grid grid-cols-4 mt-[14rem]">
+        <div className="mt-[14rem] grid grid-cols-4">
           {values.map((value) => {
             return (
               <div key={value.title}>
-                <h4 className="text-white font-bold text-2xl">{value.title}</h4>
-                <p className="text-white mt-3">{value.description}</p>
+                <h4 className="text-2xl font-bold text-white">{value.title}</h4>
+                <p className="mt-3 text-white">{value.description}</p>
               </div>
             );
           })}
@@ -38,10 +38,10 @@ export function Values(props: ValuesProps): React.JSX.Element {
         <GatsbyImage
           image={pathImage}
           alt=""
-          className="important-background  left-0 top-0 -z-50"
+          className="important-background  left-0 top-0 -z-50 h-screen w-screen"
         />
       ) : (
-        ""
+        ''
       )}
     </>
   );

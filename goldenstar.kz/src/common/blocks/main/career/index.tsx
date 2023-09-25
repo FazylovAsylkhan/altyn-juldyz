@@ -1,6 +1,6 @@
-import * as React from "react";
-import { GatsbyImage, ImageDataLike, getImage } from "gatsby-plugin-image";
-import { Button } from "common/components/button";
+import * as React from 'react';
+import { GatsbyImage, ImageDataLike, getImage } from 'gatsby-plugin-image';
+import { Button } from 'common/components/button';
 
 export interface CareerProps {
   data: {
@@ -25,7 +25,7 @@ export function Career(props: CareerProps): React.JSX.Element {
 
   return (
     <>
-      <div className="container mx-auto h-screen max-w-screen-xl flex flex-col gap-12">
+      <div className="container mx-auto flex h-screen max-w-screen-xl flex-col gap-12">
         <div className="mt-[15rem]  text-white ">
           <h2 className="text-2xl font-bold">{title}</h2>
           <h4 className="text-2xl font-bold">{subtitle}</h4>
@@ -34,7 +34,7 @@ export function Career(props: CareerProps): React.JSX.Element {
         <Button stylesBtn="w-fit">{button.text}</Button>
         <div>
           <h3 className="text-white">
-            <span className="block text-8xl font-bold">{employees.title}</span>{" "}
+            <span className="block text-8xl font-bold">{employees.title}</span>{' '}
             <span className="mt-5">{employees.subtitle}</span>
           </h3>
         </div>
@@ -43,10 +43,10 @@ export function Career(props: CareerProps): React.JSX.Element {
         <GatsbyImage
           image={pathImage}
           alt=""
-          className="important-background  left-0 top-0 -z-50"
+          className="important-background  left-0 top-0 -z-50 h-screen w-screen"
         />
       ) : (
-        ""
+        ''
       )}
     </>
   );

@@ -1,8 +1,8 @@
-import * as React from "react";
-import { GatsbyImage, ImageDataLike, getImage } from "gatsby-plugin-image";
-import { Button } from "common/components/button";
-import Icon1 from "assets/icons/main-page-icons/manufacture-feature-1.svg";
-import Icon2 from "assets/icons/main-page-icons/manufacture-feature-2.svg";
+import * as React from 'react';
+import { GatsbyImage, ImageDataLike, getImage } from 'gatsby-plugin-image';
+import { Button } from 'common/components/button';
+import Icon1 from 'assets/icons/main-page-icons/manufacture-feature-1.svg';
+import Icon2 from 'assets/icons/main-page-icons/manufacture-feature-2.svg';
 
 export interface ManufactoryProps {
   data: {
@@ -17,7 +17,7 @@ export interface ManufactoryProps {
           text: string;
           link: string;
         };
-      }
+      },
     ];
   };
 }
@@ -32,21 +32,20 @@ export function Manufactory(props: ManufactoryProps): React.JSX.Element {
       <div className="container mx-auto h-screen max-w-screen-xl">
         <div className="mt-[10rem]">
           <h2 className="font-serif text-4xl font-bold text-white">{title}</h2>
-          <h4 className="text-white font-bold text-xl">{subTitle}</h4>
+          <h4 className="text-xl font-bold text-white">{subTitle}</h4>
         </div>
         <div>
           {features.map((feature, i) => {
             return (
               <div
-                className="mt-10 flex items-center gap-5 w-fit"
-                key={feature.title}
-              >
+                className="mt-10 flex w-fit items-center gap-5"
+                key={feature.title}>
                 <div>{arrIcons[i]}</div>
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-white text-2xl font-bold">
+                  <h3 className="text-2xl font-bold text-white">
                     {feature.title}
                   </h3>
-                  <p className="text-white w-7/12">{feature.description}</p>
+                  <p className="w-7/12 text-white">{feature.description}</p>
                   <Button stylesBtn="w-fit">{feature.button.text}</Button>
                 </div>
               </div>
@@ -58,10 +57,10 @@ export function Manufactory(props: ManufactoryProps): React.JSX.Element {
         <GatsbyImage
           image={pathImage}
           alt=""
-          className="important-background  left-0 top-0 -z-50"
+          className="important-background  left-0 top-0 -z-50 h-screen w-screen"
         />
       ) : (
-        ""
+        ''
       )}
     </>
   );

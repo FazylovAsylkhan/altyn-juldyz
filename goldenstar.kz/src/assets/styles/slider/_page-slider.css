@@ -5,8 +5,10 @@
 .important-background {
   position: absolute !important;
 }
-.swiper-pagination {
+.pageSlider > .swiper-pagination {
   left: 5% !important;
+  width: fit-content !important;
+  height: fit-content !important;
 }
 .pageSlider__bullet {
   display: block;

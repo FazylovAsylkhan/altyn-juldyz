@@ -1,6 +1,16 @@
-import * as React from "react";
-import LogoIcon from "assets/icons/logo.svg";
+import * as React from 'react';
+import LogoIconLight from 'assets/icons/logo-light.svg';
+import LogoIconDark from 'assets/icons/logo-dark.svg';
 
-export function Logo(): React.JSX.Element {
-  return <LogoIcon className="h-full w-40" />;
+interface LogoProps {
+  isDark?: boolean;
+}
+
+export function Logo(props: LogoProps): React.JSX.Element {
+  const { isDark } = props;
+  return isDark ? (
+    <LogoIconDark className="h-full w-40" />
+  ) : (
+    <LogoIconLight className="h-full w-40" />
+  );
 }

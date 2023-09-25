@@ -1,10 +1,10 @@
-import * as React from "react";
-import { GatsbyImage, ImageDataLike, getImage } from "gatsby-plugin-image";
-import Icon1 from "assets/icons/main-page-icons/advantages-1.svg";
-import Icon2 from "assets/icons/main-page-icons/advantages-2.svg";
-import Icon3 from "assets/icons/main-page-icons/advantages-3.svg";
-import Icon4 from "assets/icons/main-page-icons/advantages-4.svg";
-import { Button } from "common/components/button";
+import * as React from 'react';
+import { GatsbyImage, ImageDataLike, getImage } from 'gatsby-plugin-image';
+import Icon1 from 'assets/icons/main-page-icons/advantages-1.svg';
+import Icon2 from 'assets/icons/main-page-icons/advantages-2.svg';
+import Icon3 from 'assets/icons/main-page-icons/advantages-3.svg';
+import Icon4 from 'assets/icons/main-page-icons/advantages-4.svg';
+import { Button } from 'common/components/button';
 
 export interface ComfortJagalauProps {
   data: {
@@ -36,7 +36,7 @@ export function ComfortJagalau(props: ComfortJagalauProps): React.JSX.Element {
     <>
       <div className="container mx-auto h-screen max-w-screen-xl">
         <div className=" mt-40 w-6/12 ">
-          <h2 className="mb-4 text-4xl font-serif  text-white">{title}</h2>
+          <h2 className="mb-4 font-serif text-4xl  text-white">{title}</h2>
           <p className="text-xl text-white">{description}</p>
           <Button link={button.link} stylesBtn="mt-10">
             {button.text}
@@ -60,10 +60,10 @@ export function ComfortJagalau(props: ComfortJagalauProps): React.JSX.Element {
         <GatsbyImage
           image={pathImage}
           alt=""
-          className="important-background  left-0 top-0 -z-50"
+          className="important-background  left-0 top-0 -z-50 h-screen w-screen"
         />
       ) : (
-        ""
+        ''
       )}
     </>
   );

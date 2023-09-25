@@ -1,24 +1,27 @@
 /* eslint-disable no-undef */
-import * as React from "react";
-import { graphql, PageProps, type HeadFC } from "gatsby";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Mousewheel } from "swiper/modules";
+import * as React from 'react';
+import { graphql, PageProps, type HeadFC } from 'gatsby';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Mousewheel } from 'swiper/modules';
 import {
+  AboutCompany,
   AltynJuldyz,
   Career,
   ComfortJagalau,
   Manufactory,
   OnlineShop,
   Values,
-} from "common/blocks/main";
-import { Header } from "common/components/share";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/mousewheel";
+  ProjectsAltynJuldyz,
+} from 'common/blocks/main';
+import { Header } from 'common/components/share';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/mousewheel';
 
 const IndexPage = (
   props: PageProps<Queries.PageMainJson>
 ): React.JSX.Element => {
+  const [isLightHeader, setIsLightHeader] = React.useState(false);
   const {
     altynJuldyz,
     comfortJagalau,
@@ -26,23 +29,35 @@ const IndexPage = (
     onlineShop,
     values,
     career,
+    aboutCompany,
+    projectsAltynJuldyz,
   } = props.data.pageMainJson;
+  const { buttonLangs, links } = props.data.headerJson;
 
   return (
     <Swiper
       direction="vertical"
       pagination={{
         clickable: true,
-        bulletClass: "pageSlider__bullet",
-        bulletActiveClass: "pageSlider__bullet_active",
+        bulletClass: 'pageSlider__bullet',
+        bulletActiveClass: 'pageSlider__bullet_active',
+        totalClass: 'pagination',
       }}
       modules={[Pagination, Mousewheel]}
       mousewheel
       speed={800}
       allowTouchMove={false}
       className="pageSlider"
-    >
-      <Header />
+      onSlideChange={(swiper) => {
+        const currentNumberOfSlide = swiper.realIndex + 1;
+        const changeableSlides = [5, 6];
+        setIsLightHeader(changeableSlides.includes(currentNumberOfSlide));
+      }}>
+      <Header
+        links={links}
+        langButtonLangs={buttonLangs}
+        isLight={isLightHeader}
+      />
       <SwiperSlide>
         <AltynJuldyz data={altynJuldyz} />
       </SwiperSlide>
@@ -52,8 +67,14 @@ const IndexPage = (
       <SwiperSlide>
         <Manufactory data={manufactory} />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className="truncate">
         <OnlineShop data={onlineShop} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <AboutCompany data={aboutCompany} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <ProjectsAltynJuldyz data={projectsAltynJuldyz} />
       </SwiperSlide>
       <SwiperSlide>
         <Values data={values} />
@@ -70,8 +91,23 @@ export default IndexPage;
 export const Head: HeadFC = () => <title>Главная</title>;
 
 export const query = graphql`
-  query PageMainQuery($lang: String) {
-    pageMainJson(lang: { eq: $lang }) {
+  query PageMainQuery {
+    headerJson(lang: { eq: "ru" }) {
+      buttonLangs
+      links {
+        text
+        url
+        submenu {
+          text
+          url
+          submenu {
+            text
+            url
+          }
+        }
+      }
+    }
+    pageMainJson(lang: { eq: "ru" }) {
       altynJuldyz {
         title
         description
@@ -163,6 +199,42 @@ export const query = graphql`
         image {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
+      }
+      aboutCompany {
+        title
+        box {
+          title
+          description
+          button {
+            link
+            text
+          }
+        }
+        advantages {
+          title
+          subtitle
+        }
+        image {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
+      }
+      projectsAltynJuldyz {
+        title
+        projects {
+          title
+          description
+          button {
+            text
+            link
+          }
+          image {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            }
           }
         }
       }

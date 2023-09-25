@@ -9,7 +9,7 @@
   "altynJuldyz": {
     "title": "Altyn Juldyz",
     "description": "Группа компаний в Казахстане, вносящая огромный вклад в развитие разных отраслей страны",
-    "image": "../../images/gstower.jpg"
+    "image": "../../images/main/gstower.jpg"
   },
   "comfortJagalau": {
     "title": "COMFORT JAGALAU",
@@ -27,7 +27,7 @@
         "Круглосуточная охрана и пропускная система"
       ]
     },
-    "image": "../../images/comfort-jagalau.jpg"
+    "image": "../../images/main/comfort-jagalau.jpg"
   },
   "manufactory": {
     "title": "Швейно-обувная фабрика",
@@ -50,7 +50,7 @@
         }
       }
     ],
-    "image": "../../images/manufactory.jpg"
+    "image": "../../images/main/manufactory.jpg"
   },
   "onlineShop": {
     "title": {
@@ -66,7 +66,7 @@
       "text": "Подробнее",
       "link": ""
     },
-    "image": "../../images/online-shop.jpg"
+    "image": "../../images/main/online-shop.jpg"
   },
   "values": {
     "title": "Наши ценности",
@@ -89,7 +89,7 @@
         "description": "Честность по отношению к обществу, партнерам, клиентам и сотрудникам компании "
       }
     ],
-    "image": "../../images/values.jpg"
+    "image": "../../images/main/values.jpg"
   },
   "career": {
     "title": "Карьера в Altyn Juldyz",
@@ -103,6 +103,74 @@
       "title": "300+",
       "subtitle": "Сотрудников уже работают с нами"
     },
-    "image": "../../images/career.jpg"
+    "image": "../../images/main/career.jpg"
+  },
+  "aboutCompany": {
+    "title": "О компании",
+    "box": {
+      "title": "Быть лучшими, стремиться к успеху",
+      "description": "Группа компаний Altyn Juldyz  - компании со 100% казахстанских содержанием, занимающая различными видами деятельности с 2006 года. За многие годы опыта, мы научились решать любые задачи бизнеса",
+      "button": {
+        "text": "Подробнее",
+        "link": ""
+      }
+    },
+    "advantages": [
+      { "title": "17", "subtitle": "лет на рынке" },
+      { "title": "300+", "subtitle": "штат компании" },
+      { "title": "8", "subtitle": "реализованных проектов" },
+      { "title": "12к", "subtitle": "довольных клиентов" }
+    ],
+    "image": "../../images/main/aboutCompany.jpg"
+  },
+  "projectsAltynJuldyz": {
+    "title": "Ключевые проекты",
+    "projects": [
+      {
+        "title": "Фермерское хозяйство по разведению КРС - Lake Farm",
+        "description": "«Lake Farm» — это проект по разведению крупнорогатого скота племенной породы «Абердин Ангус»",
+        "button": {
+          "text": "Подробнее",
+          "link": ""
+        },
+        "image": "../../images/main/projects/1.jpg"
+      },
+      {
+        "title": "Конный завод «Altyn-Teke»",
+        "description": "«Altyn-Teke» — это проект по разведению лошадей племенной породы «Akhal-Teke» ",
+        "button": {
+          "text": "Подробнее",
+          "link": ""
+        },
+        "image": "../../images/main/projects/2.jpg"
+      },
+      {
+        "title": "Хозяйство по разведению Романовских овец",
+        "description": "«Premium Lamb» — это проект по разведению Романовских овец. ",
+        "button": {
+          "text": "Подробнее",
+          "link": ""
+        },
+        "image": "../../images/main/projects/3.jpg"
+      },
+      {
+        "title": "Интенсивные яблоневые сады «AtekAgro»",
+        "description": "В «Atek Agro» производится выращивание яблонь и их долгосрочное хранение. Общая площадь сада составляет 60 Га, что позволяет выращивать 8 сортов яблок.",
+        "button": {
+          "text": "Подробнее",
+          "link": ""
+        },
+        "image": "../../images/main/projects/4.jpg"
+      },
+      {
+        "title": "Крупнейшее Форелевое Хозяйство в Казахстане",
+        "description": "Хозяйство находится у Тургеньского ущелья в доль реки Турген. Свежий воздух и чистая вода создают идеальные условия для выращивания здоровой и вкусной форели.",
+        "button": {
+          "text": "Подробнее",
+          "link": ""
+        },
+        "image": "../../images/main/projects/5.jpg"
+      }
+    ]
   }
 }

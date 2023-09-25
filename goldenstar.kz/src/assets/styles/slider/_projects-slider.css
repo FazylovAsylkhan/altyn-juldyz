@@ -1,0 +1,38 @@
+.projectsSlider {
+  position: relative;
+  margin-top: 20px;
+  overflow: visible !important;
+}
+.projectsSlider > .swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  z-index: 10;
+  top: -55px;
+  right: 200px;
+  width: 40px;
+  height: 40px;
+  background: no-repeat center / contain url('static/arrow-active.svg');
+  cursor: pointer;
+}
+.projectsSlider > .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+  background: no-repeat center / contain url('static/arrow-disabled.svg');
+}
+.projectsSlider > .swiper-button-next {
+  transform: scale(-1, -1);
+  right: 120px;
+}
+.projectsSlider > .swiper-pagination-fraction {
+  position: absolute;
+  top: -72px;
+  left: inherit;
+  bottom: inherit;
+  right: 280px;
+  width: fit-content;
+  height: fit-content;
+  font-size: 50px;
+  letter-spacing: -2px;
+  font-weight: bold;
+  color: #C4C4C4;
+}
+.projectsSlider > .swiper-pagination-fraction > .swiper-pagination-current {
+  color: #000000;
+}

@@ -1,5 +1,5 @@
-import * as React from "react";
-import { GatsbyImage, ImageDataLike, getImage } from "gatsby-plugin-image";
+import * as React from 'react';
+import { GatsbyImage, ImageDataLike, getImage } from 'gatsby-plugin-image';
 
 export interface AltynJuldyzProps {
   data: {
@@ -27,10 +27,10 @@ export function AltynJuldyz(props: AltynJuldyzProps): React.JSX.Element {
         <GatsbyImage
           image={pathImage}
           alt=""
-          className="important-background  left-0 top-0 -z-50"
+          className="important-background  left-0 top-0 -z-50 h-screen w-screen"
         />
       ) : (
-        ""
+        ''
       )}
     </>
   );
