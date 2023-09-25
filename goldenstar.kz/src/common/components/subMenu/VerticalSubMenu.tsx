@@ -38,6 +38,14 @@ export function VerticalSubMenu(props: VerticalSubMenuProps) {
         onMouseLeave={() => setIsOpened(false)}
         onMouseMove={() => setIsOpened(true)}>
         {links.map((link, i) => {
+          const firstItemClass = isLight
+            ? 'hover:border-[#E5E5E5]'
+            : 'border-softBlack';
+          const anotherItemClass = isLight
+            ? ''
+            : 'hover:border-gold border-gray-100/20';
+          const itemClass = i === 0 ? firstItemClass : anotherItemClass;
+
           if (link.submenu !== null && link.submenu !== undefined) {
             return (
               <HorizontalSubMenu
@@ -52,11 +60,7 @@ export function VerticalSubMenu(props: VerticalSubMenuProps) {
           return (
             <li
               key={link.text}
-              className={`hover:bg-gold border-t-2  border-black/10 hover:text-white ${
-                i !== 0
-                  ? `${isLight ? '' : 'hover:border-gold border-gray-100/20'}`
-                  : `${isLight ? 'hover:border-[#E5E5E5]' : 'border-softBlack'}`
-              }`}>
+              className={`hover:bg-gold border-t-2  border-black/10 hover:text-white ${itemClass}`}>
               <Link to={link.url} className="block px-5 py-3">
                 {link.text}
               </Link>

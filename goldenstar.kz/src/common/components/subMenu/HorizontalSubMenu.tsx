@@ -33,14 +33,16 @@ export function HorizontalSubMenu(props: HorizontalSubMenuProps) {
           isOpened ? '' : 'hidden'
         } ${isLight ? 'bg-white text-black' : 'bg-softBlack'}`}>
         {links.map((link, i) => {
+          const firstItemClass = 'border-transparent';
+          const anotherItemClass = isLight
+            ? 'border-black/10'
+            : 'border-gray-100/20';
+          const itemClass = i === 0 ? firstItemClass : anotherItemClass;
+
           return (
             <li
               key={link.text}
-              className={`hover:bg-gold hover:border-gold  border-t-2 hover:text-white ${
-                i !== 0
-                  ? `${isLight ? 'border-black/10' : 'border-gray-100/20'}`
-                  : 'border-transparent'
-              }`}>
+              className={`hover:bg-gold hover:border-gold  border-t-2 hover:text-white ${itemClass}`}>
               <Link className=" block px-5 py-3" to={link.url}>
                 {link.text}
               </Link>
