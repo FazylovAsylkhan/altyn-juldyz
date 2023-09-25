@@ -37,6 +37,9 @@
   opacity: 0.7;
   border-radius: 50%;
 }
-.pageSlider__bullet_active::after {
-  background-color: #ffffff;
+.dark.pageSlider__bullet::after {
+  background-color: #182027;
+}
+.dark.pageSlider__bullet_active {
+  border: 1px solid #182027;
 }

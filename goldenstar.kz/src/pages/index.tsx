@@ -17,11 +17,12 @@ import { Header } from 'common/components/share';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/mousewheel';
+import { toggleClass } from 'common/utils';
 
 const IndexPage = (
   props: PageProps<Queries.PageMainJson>
 ): React.JSX.Element => {
-  const [isLightHeader, setIsLightHeader] = React.useState(false);
+  const [isLight, setIsLight] = React.useState(false);
   const {
     altynJuldyz,
     comfortJagalau,
@@ -51,13 +52,11 @@ const IndexPage = (
       onSlideChange={(swiper) => {
         const currentNumberOfSlide = swiper.realIndex + 1;
         const changeableSlides = [5, 6];
-        setIsLightHeader(changeableSlides.includes(currentNumberOfSlide));
+        const isLightSlider = changeableSlides.includes(currentNumberOfSlide);
+        setIsLight(isLightSlider);
+        toggleClass(swiper.pagination.bullets, 'dark', isLightSlider);
       }}>
-      <Header
-        links={links}
-        langButtonLangs={buttonLangs}
-        isLight={isLightHeader}
-      />
+      <Header links={links} langButtonLangs={buttonLangs} isLight={isLight} />
       <SwiperSlide>
         <AltynJuldyz data={altynJuldyz} />
       </SwiperSlide>
