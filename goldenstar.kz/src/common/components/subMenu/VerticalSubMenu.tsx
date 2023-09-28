@@ -36,7 +36,7 @@ export function VerticalSubMenu(props: VerticalSubMenuProps) {
       }}>
       {label}
       <ul
-        className={`absolute -left-5 top-[1.4rem] w-[18rem] pt-[2.6rem] ${
+        className={`iMac:top-[2.1rem] iMac:w-[25rem] iMac:pt-[3.8rem] absolute -left-5 top-[1.4rem] w-[18rem] pt-[2.6rem] ${
           isOpened ? '' : 'hidden'
         } ${isLight ? 'bg-white' : 'bg-softBlack'}`}
         onMouseLeave={() => setIsOpened(false)}

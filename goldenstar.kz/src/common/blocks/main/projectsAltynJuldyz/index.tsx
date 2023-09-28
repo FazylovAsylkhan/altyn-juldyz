@@ -27,8 +27,10 @@ export function ProjectsAltynJuldyz(
   const { title, projects } = props.data;
   return (
     <>
-      <div className="container mx-auto h-screen max-w-screen-xl">
-        <h2 className="mt-[10rem] text-3xl font-bold">{title}</h2>
+      <div className="iMac:max-w-iMac mx-auto lg:max-w-screen-xl">
+        <h2 className="iMac:mt-[20rem] iMac:text-6xl font-bold lg:mt-[10rem] lg:text-3xl">
+          {title}
+        </h2>
         <Swiper
           direction="horizontal"
           spaceBetween={120}
@@ -38,22 +40,30 @@ export function ProjectsAltynJuldyz(
           }}
           navigation
           modules={[Pagination, Navigation]}
-          className="projectsSlider">
+          className="projectsSlider iMac:mt-20">
           {projects.map((project) => {
             const pathImage = getImage(project.image);
 
             return (
               <SwiperSlide key={project.title}>
-                <div className="flex gap-[5rem]">
+                <div className="flex lg:gap-[5rem]">
                   {pathImage !== undefined ? (
-                    <GatsbyImage image={pathImage} className="" alt="" />
+                    <GatsbyImage
+                      image={pathImage}
+                      className="iMac:h-[50rem] iMac:w-[80rem]"
+                      alt=""
+                    />
                   ) : (
                     ''
                   )}
-                  <div className="mt-10 w-5/12 pr-7">
-                    <h3 className="text-3xl font-bold">{project.title}</h3>
-                    <p className="mt-5 text-gray-500">{project.description}</p>
-                    <Button stylesBtn="mt-5">{project.button.text}</Button>
+                  <div className="iMac:pr-20 lg:mt-10 lg:w-5/12 lg:pr-7">
+                    <h3 className="iMac:text-4xl font-bold lg:text-3xl">
+                      {project.title}
+                    </h3>
+                    <p className="iMac:text-2xl text-gray-500 lg:mt-5">
+                      {project.description}
+                    </p>
+                    <Button stylesBtn="lg:mt-5">{project.button.text}</Button>
                   </div>
                 </div>
               </SwiperSlide>

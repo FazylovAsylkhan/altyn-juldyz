@@ -1,0 +1,176 @@
+{
+  "lang": "en",
+  "url": "/",
+  "langButtonLangs": ["/", "/kz", "/en", "/tr"],
+  "seo": {
+    "title": "Main page",
+    "h1": "Altyn Juldyz"
+  },
+  "altynJuldyz": {
+    "title": "Altyn Juldyz",
+    "description": "A group of companies in Kazakhstan, making a huge contribution to the development of various sectors of the country",
+    "image": "../../images/main/gstower.jpg"
+  },
+  "comfortJagalau": {
+    "title": "COMFORT JAGALAU",
+    "description": "We are building a multifunctional residential complex in the new center of the Almaty region in the city of Konaeva. To achieve this goal, we have assembled a professional team in the field of design, engineering and construction",
+    "button": {
+      "text": "More",
+      "link": "http://gsbuilding.kz/"
+    },
+    "advantages": {
+      "title": "Our advantages",
+      "items": [
+        "Security cameras",
+        "Underground parking",
+        "Children's and sports grounds",
+        "Round-the-clock security and access control system"
+      ]
+    },
+    "image": "../../images/main/comfort-jagalau.jpg"
+  },
+  "manufactory": {
+    "title": "Sewing and shoe factory",
+    "subTitle": "The largest manufacturer of workwear and safety shoes",
+    "features": [
+      {
+        "title": "Individual design development of workwear",
+        "description": "As a manufacturer, we will be happy to develop an individual design of your workwear, taking into account all your wishes and in full compliance with the corporate identity and color scheme of your company. Your employees will appreciate their new uniforms.",
+        "button": {
+          "text": "More",
+          "link": "/developed-site"
+        }
+      },
+      {
+        "title": "Applying your company's logo",
+        "description": "We will put your company's logo on the workwear or protective equipment we manufacture (thermal printing, silk-screen printing or embroidery). This everyday has a very positive impact on the image of your company and on the loyalty of your employees and staff.",
+        "button": {
+          "text": "More",
+          "link": "https://gslogotip.kz/"
+        }
+      }
+    ],
+    "image": "../../images/main/manufactory.jpg"
+  },
+  "onlineShop": {
+    "title": {
+      "main": "Online",
+      "tail": "store"
+    },
+    "subtitle": {
+      "part1": "A wide",
+      "part2": "range of",
+      "part3": "products"
+    },
+    "button": {
+      "text": "More",
+      "link": "https://aforma.kz/"
+    },
+    "image": "../../images/main/online-shop.jpg"
+  },
+  "values": {
+    "title": "Our values",
+    "description": "To offer the product that people need, to love what they do, to do their work efficiently, to constantly improve using modern technologies, and of course, to comply with the terms of the agreement - this is the basis on which the company builds its activities. At the same time, we strictly comply with legal norms and requirements, labor and environmental protection requirements.",
+    "values": [
+      {
+        "title": "Responsibility",
+        "description": "We undertake only those obligations that we can fulfill with proper quality"
+      },
+      {
+        "title": "Quality",
+        "description": "We always strive for high quality of our products and services"
+      },
+      {
+        "title": "Trust",
+        "description": "We take into account the wishes of the client and give feedback"
+      },
+      {
+        "title": "People",
+        "description": "Honesty towards society, partners, clients and employees of the company"
+      }
+    ],
+    "image": "../../images/main/values.jpg"
+  },
+  "career": {
+    "title": "Career in Altyn Juldyz",
+    "subtitle": "Be a part of a big team!",
+    "description": "Forward to achievements with us",
+    "button": {
+      "text": "Leave a request",
+      "link": "/career"
+    },
+    "employees": {
+      "title": "300+",
+      "subtitle": "Employees are already working with us"
+    },
+    "image": "../../images/main/career.jpg"
+  },
+  "aboutCompany": {
+    "title": "About company",
+    "box": {
+      "title": "Be the best, strive for success",
+      "description": "Altyn Juldyz Group of Companies is a company with 100% Kazakhstani content, engaged in various activities since 2006. Over many years of experience, we have learned to solve any business problems",
+      "button": {
+        "text": "More",
+        "link": "/about-us"
+      }
+    },
+    "advantages": [
+      { "title": "17", "subtitle": "years on the market" },
+      { "title": "300+", "subtitle": "company staff" },
+      { "title": "8", "subtitle": "implemented projects" },
+      { "title": "12к", "subtitle": "satisfied customers" }
+    ],
+    "image": "../../images/main/aboutCompany.jpg"
+  },
+  "projectsAltynJuldyz": {
+    "title": "Key projects",
+    "projects": [
+      {
+        "title": "Cattle breeding farm - Lake Farm",
+        "description": "«Lake Farm» is a project for breeding cattle of the «Aberdeen Angus» breeding breed",
+        "button": {
+          "text": "More",
+          "link": "https://lakefarm.kz/"
+        },
+        "image": "../../images/main/projects/1.jpg"
+      },
+      {
+        "title": "Stud farm «Altyn-Teke»",
+        "description": "«Altyn-Teke» is a project for breeding horses of the breeding breed «Akhal-Teke»",
+        "button": {
+          "text": "More",
+          "link": "http://altyn-teke.kz/"
+        },
+        "image": "../../images/main/projects/2.jpg"
+      },
+      {
+        "title": "Romanov Sheep breeding farm",
+        "description": "«Premium Lamb» is a project for breeding Romanov sheep.",
+        "button": {
+          "text": "More",
+          "link": "https://premiumlamb.kz/"
+        },
+        "image": "../../images/main/projects/3.jpg"
+      },
+      {
+        "title": "Intensive apple orchards «AtekAgro»",
+        "description": "«Atek Agro» produces apple trees and their long-term storage. The total area of the garden is 60 hectares, which allows you to grow 8 varieties of apples.",
+        "button": {
+          "text": "More",
+          "link": "https://atekagro.kz/"
+        },
+        "image": "../../images/main/projects/4.jpg"
+      },
+      {
+        "title": "The largest Trout Farm in Kazakhstan",
+        "description": "The farm is located at the Turgen gorge along the Turgen River. Fresh air and clean water create ideal conditions for growing healthy and delicious trout.",
+        "button": {
+          "text": "More",
+          "link": "http://freshfish.kz/"
+        },
+        "image": "../../images/main/projects/5.jpg"
+      }
+    ]
+  }
+}

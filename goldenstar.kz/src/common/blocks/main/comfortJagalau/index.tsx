@@ -26,29 +26,31 @@ export function ComfortJagalau(props: ComfortJagalauProps): React.JSX.Element {
   const { title, description, image, button, advantages } = props.data;
   const pathImage = getImage(image);
   const arrIcons = [
-    <Icon1 className="mb-5" key={1} />,
-    <Icon2 className="mb-5" key={2} />,
-    <Icon3 className="mb-5" key={3} />,
-    <Icon4 className="mb-5" key={4} />,
+    <Icon1 className="iMac:w-40 iMac:h-40 mb-5" key={1} />,
+    <Icon2 className="iMac:w-40 iMac:h-40 mb-5" key={2} />,
+    <Icon3 className="iMac:w-40 iMac:h-40 mb-5" key={3} />,
+    <Icon4 className="iMac:w-40 iMac:h-40 mb-5" key={4} />,
   ];
 
   return (
     <>
-      <div className="container mx-auto h-screen max-w-screen-xl">
-        <div className=" mt-40 w-6/12 ">
-          <h2 className="mb-4 font-serif text-4xl  text-white">{title}</h2>
-          <p className="text-xl text-white">{description}</p>
-          <Button link={button.link} stylesBtn="mt-10">
+      <div className="iMac:max-w-iMac mx-auto lg:max-w-screen-xl">
+        <div className="iMac:mt-[15%] iMac:w-7/12 lg:mt-40 lg:w-6/12 ">
+          <h2 className="iMac:text-7xl font-serif text-white lg:text-4xl">
+            {title}
+          </h2>
+          <p className="iMac:text-4xl text-white lg:mt-4">{description}</p>
+          <Button link={button.link} stylesBtn="iMac:mt-20 lg:mt-10">
             {button.text}
           </Button>
         </div>
-        <div className="mt-20">
-          <strong className="block text-2xl text-white">
+        <div className="iMac:mt-80 lg:mt-20">
+          <strong className="iMac:text-5xl block text-white lg:text-2xl">
             {advantages.title}
           </strong>
-          <ul className="mt-10 grid grid-cols-4 text-white">
+          <ul className="iMac:text-3xl iMac:gap-10 grid grid-cols-4 text-white lg:mt-10">
             {advantages.items.map((item, i) => (
-              <li key={item}>
+              <li key={item} className="">
                 {arrIcons[i]}
                 {item}
               </li>

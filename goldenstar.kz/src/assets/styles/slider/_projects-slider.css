@@ -36,3 +36,19 @@
 .projectsSlider > .swiper-pagination-fraction > .swiper-pagination-current {
   color: #000000;
 }
+
+@media (min-width: 2560px){
+  .projectsSlider > .swiper-button-prev, .swiper-button-next {
+    top: -155px;
+    width: 70px;
+    height: 70px;
+  }
+  .projectsSlider > .swiper-button-prev{
+    right: 230px;
+  }
+  .projectsSlider > .swiper-pagination-fraction {
+    top: -173px;
+    right: 350px;
+    font-size: 70px;
+  }
+}

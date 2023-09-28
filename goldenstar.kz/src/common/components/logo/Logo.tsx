@@ -9,8 +9,8 @@ interface LogoProps {
 export function Logo(props: LogoProps): React.JSX.Element {
   const { isDark } = props;
   return isDark ? (
-    <LogoIconDark className="h-full w-40" />
+    <LogoIconDark className="iMac:w-60 h-full w-20 lg:w-40" />
   ) : (
-    <LogoIconLight className="h-full w-40" />
+    <LogoIconLight className="iMac:w-60 h-full w-20 lg:w-40" />
   );
 }

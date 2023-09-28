@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 interface ButtonLangProps {
+  value: string;
   isShownButton: boolean;
   isShownMenu: boolean;
   onClick: () => void;
@@ -10,17 +11,19 @@ interface ButtonLangProps {
 }
 
 export function ButtonLang(props: ButtonLangProps) {
-  const { isShownButton, isShownMenu, onClick, isLightHeader, langs } = props;
+  const { isShownButton, isShownMenu, onClick, isLightHeader, langs, value } =
+    props;
+  const buttonText = `${value[0].toUpperCase()}${value[1]}`;
 
   return (
     <button
-      className={`bg-gold relative rounded-lg px-7 py-1  ${
+      className={`bg-gold iMac:py-2 iMac:text-2xl relative rounded-lg px-7 py-1  ${
         isShownButton ? 'text-white' : 'bg-transparent text-transparent'
       }`}
       onClick={() => onClick()}>
-      Ru
+      {buttonText}
       <ul
-        className={`absolute left-0 top-[68px] w-full ${
+        className={`iMac:top-[96px] absolute left-0 top-[68px] w-full ${
           isShownMenu ? '' : 'hidden'
         } ${
           isLightHeader ? ' bg-white text-black' : 'bg-softBlack text-white'

@@ -16,19 +16,25 @@ export function Values(props: ValuesProps): React.JSX.Element {
 
   return (
     <>
-      <div className="container mx-auto h-screen max-w-screen-xl">
-        <div className="mt-[10rem]">
-          <h2 className="mb-4 font-serif text-4xl font-bold text-white">
+      <div className="iMac:max-w-iMac mx-auto lg:max-w-screen-xl">
+        <div className="iMac:mt-[20rem] lg:mt-[10rem]">
+          <h2 className="iMac:text-6xl font-bold text-white lg:text-4xl">
             {title}
           </h2>
-          <p className="w-7/12 text-white">{description}</p>
+          <p className="iMac:text-3xl text-white lg:mt-4 lg:w-8/12">
+            {description}
+          </p>
         </div>
-        <div className="mt-[14rem] grid grid-cols-4">
+        <div className="iMac:gap-10 iMac:mt-[30rem] grid grid-cols-4 lg:mt-[14rem]">
           {values.map((value) => {
             return (
               <div key={value.title}>
-                <h4 className="text-2xl font-bold text-white">{value.title}</h4>
-                <p className="mt-3 text-white">{value.description}</p>
+                <h4 className="iMac:text-4xl font-bold text-white lg:text-2xl">
+                  {value.title}
+                </h4>
+                <p className="iMac:text-2xl iMac:mt-7 text-white lg:mt-3">
+                  {value.description}
+                </p>
               </div>
             );
           })}

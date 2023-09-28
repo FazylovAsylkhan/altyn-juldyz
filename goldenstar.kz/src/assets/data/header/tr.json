@@ -1,51 +1,51 @@
 {
-  "lang": "kz",
+  "lang": "tr",
   "links": [
     {
-      "text": "Компания",
+      "text": "Şirket",
       "submenu": [
-        { "text": "Біз туралы", "url": "/about-us" },
-        { "text": "Жаңалықтар", "url": "/news" }
+        { "text": "Hakkımızda", "url": "/about-us" },
+        { "text": "Haber", "url": "/news" }
       ]
     },
     {
-      "text": "Жобалар",
+      "text": "Projeler",
       "submenu": [
-        { "text": "ТК құрылысы", "url": "http://gsbuilding.kz/" },
+        { "text": "LCD inşaatı", "url": "http://gsbuilding.kz/" },
         {
-          "text": "Тігін және аяқ киім фабрикасы",
+          "text": "Konfeksiyon ve ayakkabı fabrikası",
           "submenu": [
             {
-              "text": "Логотипті қолдану",
+              "text": "Logo çizimi",
               "url": "https://gstools.kz/"
             },
             {
-              "text": "Тапсырыс бойынша тігу",
+              "text": "Ismarlama terzilik",
               "url": "/developed-site"
             }
           ]
         },
         {
-          "text": "Сельское хозяйство",
+          "text": "Tarım",
           "submenu": [
             {
-              "text": "«Абердин Ангус» өсіру",
+              "text": "«Aberdeen Angus» un yetiştirilmesi",
               "url": "http://lakefarm.kz/"
             },
             {
-              "text": "Ахалтеке жылқыларын өсіру",
+              "text": "Akhaltekin atlarının yetiştirilmesi",
               "url": "http://altyn-teke.kz/"
             },
             {
-              "text": "Романов қойларын өсіру",
+              "text": "Romanov koyunlarının yetiştirilmesi",
               "url": "http://premiumlamb.kz/"
             },
             {
-              "text": "Форель өсіру",
+              "text": "Alabalık yetiştiriciliği",
               "url": "http://freshfish.kz/"
             },
             {
-              "text": "Қарқынды алма бақтары",
+              "text": "Yoğun elma Bahçeleri",
               "url": "https://atekagro.kz/"
             }
           ]
@@ -53,15 +53,15 @@
       ]
     },
     {
-      "text": "Дүкен",
+      "text": "Mağaza",
       "url": "http://aforma.kz/"
     },
     {
-      "text": "Мансап",
+      "text": "Kariyer",
       "url": "/career"
     },
     {
-      "text": "Байланыс",
+      "text": "Temaslar",
       "url": "/contacts"
     }
   ],

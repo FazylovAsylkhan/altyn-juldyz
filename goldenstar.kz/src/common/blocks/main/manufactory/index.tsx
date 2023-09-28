@@ -29,24 +29,30 @@ export function Manufactory(props: ManufactoryProps): React.JSX.Element {
 
   return (
     <>
-      <div className="container mx-auto h-screen max-w-screen-xl">
-        <div className="mt-[10rem]">
-          <h2 className="font-serif text-4xl font-bold text-white">{title}</h2>
-          <h4 className="text-xl font-bold text-white">{subTitle}</h4>
+      <div className="iMac:max-w-iMac mx-auto lg:max-w-screen-xl">
+        <div className="iMac:mt-[20rem] lg:mt-[10rem]">
+          <h2 className="iMac:text-7xl font-serif font-bold text-white lg:text-4xl">
+            {title}
+          </h2>
+          <h4 className="iMac:text-4xl font-bold text-white">{subTitle}</h4>
         </div>
-        <div>
+        <div className="iMac:gap-40 iMac:mt-20 flex lg:gap-10">
           {features.map((feature, i) => {
             return (
               <div
-                className="mt-10 flex w-fit items-center gap-5"
+                className="iMac:max-w-6/12  iMac:gap-10 flex w-fit gap-5 lg:mt-10"
                 key={feature.title}>
                 <div>{arrIcons[i]}</div>
-                <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl font-bold text-white">
+                <div className="flex flex-col">
+                  <h3 className="iMac:text-5xl font-bold text-white lg:text-2xl">
                     {feature.title}
                   </h3>
-                  <p className="w-7/12 text-white">{feature.description}</p>
-                  <Button stylesBtn="w-fit">{feature.button.text}</Button>
+                  <p className="iMac:text-3xl w-full text-white lg:mt-5">
+                    {feature.description}
+                  </p>
+                  <Button stylesBtn="w-fit lg:mt-20 iMac:mt-32">
+                    {feature.button.text}
+                  </Button>
                 </div>
               </div>
             );

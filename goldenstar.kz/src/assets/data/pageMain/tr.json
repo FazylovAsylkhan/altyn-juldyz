@@ -1,0 +1,176 @@
+{
+  "lang": "tr",
+  "url": "/",
+  "langButtonLangs": ["/", "/kz", "/en", "/tr"],
+  "seo": {
+    "title": "Ana sayfa",
+    "h1": "Altyn Juldyz"
+  },
+  "altynJuldyz": {
+    "title": "Altyn Juldyz",
+    "description": "Kazakistan'da ülkenin farklı sektörlerinin gelişimine büyük katkıda bulunan bir grup şirket",
+    "image": "../../images/main/gstower.jpg"
+  },
+  "comfortJagalau": {
+    "title": "COMFORT JAGALAU",
+    "description": "Konayeva'daki Almatın bölgesinin yeni merkezinde çok işlevli bir konut kompleksi inşa ediyoruz. Bu hedefi gerçekleştirmek için tasarım, mühendislik ve inşaat alanlarında profesyonel bir ekip kurduk",
+    "button": {
+      "text": "Etraflıca",
+      "link": "http://gsbuilding.kz/"
+    },
+    "advantages": {
+      "title": "Avantajlarımız",
+      "items": [
+        "Güvenlik kameraları",
+        "Yeraltı otoparkı",
+        "Çocuk ve spor alanları",
+        "24 saat güvenlik ve geçiş sistemi"
+      ]
+    },
+    "image": "../../images/main/comfort-jagalau.jpg"
+  },
+  "manufactory": {
+    "title": "Konfeksiyon ve ayakkabı fabrikası",
+    "subTitle": "En büyük iş kıyafetleri ve iş ayakkabıları üreticisi",
+    "features": [
+      {
+        "title": "Özel iş elbisesi tasarımı geliştirme",
+        "description": "Bir üretici olarak, iş giysilerinizin özel tasarımını tüm isteklerinize uygun olarak ve şirketinizin kurumsal tarzına ve renk şemasına tam olarak uyarak geliştirmekten memnuniyet duyarız. Çalışanlarınız yeni formlarını takdir edeceklerdir.",
+        "button": {
+          "text": "Etraflıca",
+          "link": "/developed-site"
+        }
+      },
+      {
+        "title": "Şirketinizin logosunu çizme",
+        "description": "Şirket logonuzu ürettiğimiz iş giysilerine veya koruma araçlarına (termal baskı, serigrafi veya nakış) koyacağız. Bu, şirketinizin imajını ve çalışanlarınızın ve çalışanlarınızın sadakatini çok olumlu etkilemek için bir gün olacaktır.",
+        "button": {
+          "text": "Etraflıca",
+          "link": "https://gslogotip.kz/"
+        }
+      }
+    ],
+    "image": "../../images/main/manufactory.jpg"
+  },
+  "onlineShop": {
+    "title": {
+      "main": "Çevrimiçi",
+      "tail": "mağaza"
+    },
+    "subtitle": {
+      "part1": "Geniş",
+      "part2": "ürün",
+      "part3": "yelpazesi"
+    },
+    "button": {
+      "text": "Etraflıca",
+      "link": "https://aforma.kz/"
+    },
+    "image": "../../images/main/online-shop.jpg"
+  },
+  "values": {
+    "title": "Değerlerimiz",
+    "description": "İnsanların ihtiyaç duyduğu ürünü sunmak, işlerini sevmek, işi niteliksel olarak yerine getirmek, modern teknolojiyi kullanarak sürekli gelişmek ve tabii ki anlaşmanın zamanlamasına uymak, şirketin faaliyetlerini kurduğu temeldir. Aynı zamanda yasal normlara ve gerekliliklere, iş sağlığı ve çevre şartlarına sıkı sıkıya bağlıyız.",
+    "values": [
+      {
+        "title": "Sorumluluk",
+        "description": "Biz sadece uygun kalitede yerine getirebileceğimiz yükümlülükleri üstleniriz"
+      },
+      {
+        "title": "Kalite",
+        "description": "Biz her zaman ürünlerimizin ve hizmetlerimizin yüksek kalitesini hedefliyoruz"
+      },
+      {
+        "title": "Güven",
+        "description": "Müşterinin isteklerini dikkate alıyoruz ve geri bildirim veriyoruz"
+      },
+      {
+        "title": "İnsanlar",
+        "description": "Topluma, ortaklara, müşterilere ve şirket çalışanlarına karşı dürüstlük"
+      }
+    ],
+    "image": "../../images/main/values.jpg"
+  },
+  "career": {
+    "title": "Altyn Juldyz'de Kariyer",
+    "subtitle": "Büyük takımın bir parçası ol!",
+    "description": "Başarılara bizimle birlikte devam edin",
+    "button": {
+      "text": "Başvuruyu bırak",
+      "link": "/career"
+    },
+    "employees": {
+      "title": "300+",
+      "subtitle": "Çalışanlar zaten bizimle çalışıyor"
+    },
+    "image": "../../images/main/career.jpg"
+  },
+  "aboutCompany": {
+    "title": "Şirket hakkında",
+    "box": {
+      "title": "En iyisi olmak, başarıya ulaşmak için çabalamak",
+      "description": "Altyn Juldyz şirketler grubu, 2006 yılından bu yana %100 Kazak içeriğine sahip, çeşitli faaliyetlerde bulunan bir şirkettir. Uzun yıllara dayanan tecrübelerimizle, herhangi bir iş problemini çözmeyi öğrendik",
+      "button": {
+        "text": "Etraflıca",
+        "link": "/about-us"
+      }
+    },
+    "advantages": [
+      { "title": "17", "subtitle": "piyasada yıllarca" },
+      { "title": "300+", "subtitle": "şirketin personeli" },
+      { "title": "8", "subtitle": "hayata geçirilen projeler" },
+      { "title": "12к", "subtitle": "memnun müşteriler" }
+    ],
+    "image": "../../images/main/aboutCompany.jpg"
+  },
+  "projectsAltynJuldyz": {
+    "title": "Anahtar projeler",
+    "projects": [
+      {
+        "title": "Sığır Yetiştiriciliği Çiftliği - Lake Farm",
+        "description": "Lake Farm, Aberdeen Angus'un kabile ırkının büyük boynuzlu hayvanlarının yetiştirilmesi için bir projedir",
+        "button": {
+          "text": "Etraflıca",
+          "link": "https://lakefarm.kz/"
+        },
+        "image": "../../images/main/projects/1.jpg"
+      },
+      {
+        "title": "Altyn-Teke At Fabrikası",
+        "description": "«Altyn-Teke», «Akhal-Teke» kabile ırkının atlarını yetiştirmek için bir projedir.",
+        "button": {
+          "text": "Etraflıca",
+          "link": "http://altyn-teke.kz/"
+        },
+        "image": "../../images/main/projects/2.jpg"
+      },
+      {
+        "title": "Romanov koyunlarının yetiştirilmesi için çiftlik",
+        "description": "Premium Kuzu, Romanov koyunlarının yetiştirilmesi için bir projedir.",
+        "button": {
+          "text": "Etraflıca",
+          "link": "https://premiumlamb.kz/"
+        },
+        "image": "../../images/main/projects/3.jpg"
+      },
+      {
+        "title": "Atekagro'nun yoğun elma bahçeleri",
+        "description": "Atek Agro'da elma ağaçlarının yetiştirilmesi ve uzun süreli depolanması yapılmaktadır. Bahçenin toplam alanı 60 Hektar olup 8 çeşit elma yetiştirilmesine izin vermektedir.",
+        "button": {
+          "text": "Etraflıca",
+          "link": "https://atekagro.kz/"
+        },
+        "image": "../../images/main/projects/4.jpg"
+      },
+      {
+        "title": "Kazakistan'ın en büyük Alabalık Çiftliği",
+        "description": "Çiftlik, Turgen Nehri boyunca Turgen Boğazı'nda yer almaktadır. Temiz hava ve temiz su, sağlıklı ve lezzetli alabalık yetiştirmek için ideal koşulları yaratır.",
+        "button": {
+          "text": "Etraflıca",
+          "link": "http://freshfish.kz/"
+        },
+        "image": "../../images/main/projects/5.jpg"
+      }
+    ]
+  }
+}

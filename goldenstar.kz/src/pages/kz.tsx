@@ -20,9 +20,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/mousewheel';
 import { toggleClass } from 'common/utils';
 
-const IndexPage = (
-  props: PageProps<Queries.PageMainJson>
-): React.JSX.Element => {
+const Kz = (props: PageProps<Queries.PageMainJson>): React.JSX.Element => {
   const [isLight, setIsLight] = React.useState(false);
   const {
     altynJuldyz,
@@ -91,7 +89,7 @@ const IndexPage = (
   );
 };
 
-export default IndexPage;
+export default Kz;
 
 export const Head: HeadFC = (props: HeadProps) => {
   const { title } = props.data.pageMainJson.seo;
@@ -101,7 +99,7 @@ export const Head: HeadFC = (props: HeadProps) => {
 
 export const query = graphql`
   query PageMainQuery {
-    headerJson(lang: { eq: "ru" }) {
+    headerJson(lang: { eq: "kz" }) {
       lang
       buttonLangs {
         text
@@ -120,7 +118,7 @@ export const query = graphql`
         }
       }
     }
-    pageMainJson(lang: { eq: "ru" }) {
+    pageMainJson(lang: { eq: "kz" }) {
       seo {
         title
         h1

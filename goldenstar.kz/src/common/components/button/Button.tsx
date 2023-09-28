@@ -11,8 +11,11 @@ export function Button(props: ButtonProps): React.JSX.Element {
   const { link, stylesBtn, stylesLink, children } = props;
 
   return (
-    <button className={`bg-gold rounded-lg text-white ${stylesBtn}`}>
-      <a href={link} className={`block px-20 py-3 ${stylesLink}`}>
+    <button
+      className={`bg-gold iMac:text-2xl rounded-lg text-white ${stylesBtn}`}>
+      <a
+        href={link}
+        className={`iMac:py-6 iMac:px-24 block px-20 py-3 ${stylesLink}`}>
         {children}
       </a>
     </button>

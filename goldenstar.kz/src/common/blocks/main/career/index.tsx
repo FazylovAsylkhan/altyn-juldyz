@@ -25,18 +25,26 @@ export function Career(props: CareerProps): React.JSX.Element {
 
   return (
     <>
-      <div className="container mx-auto flex h-screen max-w-screen-xl flex-col gap-12">
-        <div className="mt-[15rem]  text-white ">
-          <h2 className="text-2xl font-bold">{title}</h2>
-          <h4 className="text-2xl font-bold">{subtitle}</h4>
-          <p className="mt-3">{description}</p>
-        </div>
-        <Button stylesBtn="w-fit">{button.text}</Button>
-        <div>
-          <h3 className="text-white">
-            <span className="block text-8xl font-bold">{employees.title}</span>{' '}
-            <span className="mt-5">{employees.subtitle}</span>
-          </h3>
+      <div className="iMac:max-w-iMac iMac:gap-20 mx-auto lg:max-w-screen-xl ">
+        <div className="iMac:mt-32 flex flex-col lg:gap-12">
+          <div className="iMac:text-5xl  font-bold text-white lg:mt-[15rem] lg:text-2xl">
+            <h2>{title}</h2>
+            <h4>{subtitle}</h4>
+            <p className="iMac:text-3xl font-normal lg:mt-3 lg:text-base">
+              {description}
+            </p>
+          </div>
+          <Button stylesBtn="w-fit">{button.text}</Button>
+          <div>
+            <h3 className="iMac:mt-20 text-white">
+              <span className="iMac:text-9xl block font-bold lg:text-8xl">
+                {employees.title}
+              </span>
+              <span className="iMac:text-3xl iMac:mt-10 block lg:mt-5">
+                {employees.subtitle}
+              </span>
+            </h3>
+          </div>
         </div>
       </div>
       {pathImage !== undefined ? (

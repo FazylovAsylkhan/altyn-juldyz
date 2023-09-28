@@ -11,17 +11,17 @@
     {
       "text": "Проекты",
       "submenu": [
-        { "text": "Строительство ЖК", "url": "/" },
+        { "text": "Строительство ЖК", "url": "http://gsbuilding.kz/" },
         {
           "text": "Швейно-обувная фабрика",
           "submenu": [
             {
               "text": "Нанесение логотипа",
-              "url": "/"
+              "url": "https://gstools.kz/"
             },
             {
               "text": "Пошив на заказ",
-              "url": "/"
+              "url": "/developed-site"
             }
           ]
         },
@@ -30,23 +30,23 @@
           "submenu": [
             {
               "text": "Разведение «Абердин Ангус»",
-              "url": "/"
+              "url": "http://lakefarm.kz/"
             },
             {
               "text": "Разведение Ахалтекинских лошадей",
-              "url": "/"
+              "url": "http://altyn-teke.kz/"
             },
             {
               "text": "Разведение Романовских овец",
-              "url": "/"
+              "url": "http://premiumlamb.kz/"
             },
             {
               "text": "Разведение Форелей",
-              "url": "/"
+              "url": "http://freshfish.kz/"
             },
             {
               "text": "Интенсивные яблоневые сады",
-              "url": "/"
+              "url": "https://atekagro.kz/"
             }
           ]
         }
@@ -54,7 +54,7 @@
     },
     {
       "text": "Магазин",
-      "url": "/shop"
+      "url": "http://aforma.kz/"
     },
     {
       "text": "Карьера",

@@ -27,29 +27,25 @@ export function OnlineShop(props: OnlineShopProps): React.JSX.Element {
 
   return (
     <>
-      <div className="container mx-auto h-screen max-w-screen-xl">
-        <div className="mt-[10rem] flex flex-row-reverse">
+      <div className="iMac:max-w-iMac mx-auto lg:max-w-screen-xl">
+        <div className="iMac:mt-[20rem] mt-[10rem] flex flex-row-reverse">
           <div>
-            <h2>
-              <div className="text-[5rem] uppercase text-white">
+            <h2 className="uppercase text-white">
+              <div className="iMac:text-[9rem] lg:text-[5rem]">
                 {title.main}
               </div>
-              <div className="-mt-12 text-[5.47rem] uppercase text-white">
+              <div className="iMac:text-[9.6rem] iMac:-mt-24 lg:-mt-12 lg:text-[5.47rem] ">
                 {title.tail}
               </div>
             </h2>
-            <h3 className="mt-5">
-              <div className="text-[3rem] uppercase text-white ">
-                {subtitle.part1}
-              </div>
-              <div className="-mt-6 text-[3rem] uppercase text-white">
-                {subtitle.part2}
-              </div>
-              <div className="-mt-6 text-[3rem] font-bold uppercase text-white">
+            <h3 className="iMac:text-[6rem] uppercase text-white  lg:mt-5 lg:text-[3rem]">
+              <div>{subtitle.part1}</div>
+              <div className="iMac:-mt-12 lg:-mt-6">{subtitle.part2}</div>
+              <div className="iMac:-mt-12 font-bold lg:-mt-6">
                 {subtitle.part3}
               </div>
             </h3>
-            <Button stylesBtn="mt-10">{button.text}</Button>
+            <Button stylesBtn="lg:mt-10">{button.text}</Button>
           </div>
         </div>
       </div>

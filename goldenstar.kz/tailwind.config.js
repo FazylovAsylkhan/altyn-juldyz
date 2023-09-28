@@ -9,7 +9,18 @@ module.exports = {
     `./src/pages/**/*.{js,jsx,ts,tsx}`,
   ],
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+      iMac: '2560px',
+    },
     extend: {
+      maxWidth: {
+        iMac: '2000px',
+      },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         serif: ['trajan probold', ...defaultTheme.fontFamily.serif],

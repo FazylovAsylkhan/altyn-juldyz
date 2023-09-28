@@ -15,12 +15,12 @@ export function AltynJuldyz(props: AltynJuldyzProps): React.JSX.Element {
 
   return (
     <>
-      <div className="container mx-auto h-screen max-w-screen-xl">
-        <div className="mt-[30rem] w-5/12 ">
-          <h1 className="mb-4 font-serif text-7xl font-bold text-white">
+      <div className="iMac:max-w-iMac mx-auto lg:max-w-screen-xl">
+        <div className="iMac:mt-[50%] iMac:w-6/12 lg:mt-[30rem] lg:w-5/12">
+          <h1 className="iMac:mb-8 iMac:text-9xl font-serif font-bold text-white lg:text-7xl">
             {title}
           </h1>
-          <p className="text-white">{description}</p>
+          <p className="iMac:text-4xl text-white lg:mt-4">{description}</p>
         </div>
       </div>
       {pathImage !== undefined ? (

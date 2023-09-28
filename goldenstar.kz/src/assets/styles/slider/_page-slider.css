@@ -31,6 +31,7 @@
   opacity: 0.7;
   border-radius: 50%;
   background-color: #ffffff;
+
 }
 .pageSlider__bullet_active {
   border: 1px solid #ffffff;
@@ -42,4 +43,21 @@
 }
 .dark.pageSlider__bullet_active {
   border: 1px solid #182027;
+}
+
+@media (min-width: 2560px){
+  .pageSlider__bullet::after  {
+    width: 12px;
+    height: 12px;
+  }
+  .dark.pageSlider__bullet_active {
+    border: 2px solid #182027;
+  }
+  .pageSlider__bullet {
+    width: 26px;
+    height: 26px;
+  }
+  .pageSlider__bullet_active {
+    border: 2px solid #ffffff;
+  }
 }

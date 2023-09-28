@@ -1,51 +1,54 @@
 {
-  "lang": "kz",
+  "lang": "en",
   "links": [
     {
-      "text": "Компания",
+      "text": "Company",
       "submenu": [
-        { "text": "Біз туралы", "url": "/about-us" },
-        { "text": "Жаңалықтар", "url": "/news" }
+        { "text": "About us", "url": "/about-us" },
+        { "text": "News", "url": "/news" }
       ]
     },
     {
-      "text": "Жобалар",
+      "text": "Projects",
       "submenu": [
-        { "text": "ТК құрылысы", "url": "http://gsbuilding.kz/" },
         {
-          "text": "Тігін және аяқ киім фабрикасы",
+          "text": "Construction of the residential complex",
+          "url": "http://gsbuilding.kz/"
+        },
+        {
+          "text": "Sewing and shoe factory",
           "submenu": [
             {
-              "text": "Логотипті қолдану",
+              "text": "Applying the logo",
               "url": "https://gstools.kz/"
             },
             {
-              "text": "Тапсырыс бойынша тігу",
+              "text": "Custom tailoring",
               "url": "/developed-site"
             }
           ]
         },
         {
-          "text": "Сельское хозяйство",
+          "text": "Agricultural industry",
           "submenu": [
             {
-              "text": "«Абердин Ангус» өсіру",
+              "text": "Breeding «Aberdeen Angus»",
               "url": "http://lakefarm.kz/"
             },
             {
-              "text": "Ахалтеке жылқыларын өсіру",
+              "text": "Breeding of Akhal-Teke horses",
               "url": "http://altyn-teke.kz/"
             },
             {
-              "text": "Романов қойларын өсіру",
+              "text": "Breeding of Romanov sheep",
               "url": "http://premiumlamb.kz/"
             },
             {
-              "text": "Форель өсіру",
+              "text": "Trout Breeding",
               "url": "http://freshfish.kz/"
             },
             {
-              "text": "Қарқынды алма бақтары",
+              "text": "Intensive apple orchards",
               "url": "https://atekagro.kz/"
             }
           ]
@@ -53,15 +56,15 @@
       ]
     },
     {
-      "text": "Дүкен",
+      "text": "Store",
       "url": "http://aforma.kz/"
     },
     {
-      "text": "Мансап",
+      "text": "Career",
       "url": "/career"
     },
     {
-      "text": "Байланыс",
+      "text": "Contacts",
       "url": "/contacts"
     }
   ],
