@@ -56,6 +56,7 @@ const Kz = (props: PageProps<Queries.PageMainJson>): React.JSX.Element => {
         toggleClass(swiper.pagination.bullets, 'dark', isLightSlider);
       }}>
       <Header
+        isFixed
         lang={lang}
         links={links}
         buttonLangs={buttonLangs}
@@ -74,10 +75,10 @@ const Kz = (props: PageProps<Queries.PageMainJson>): React.JSX.Element => {
         <OnlineShop data={onlineShop} />
       </SwiperSlide>
       <SwiperSlide>
-        <AboutCompany data={aboutCompany} />
+        <ProjectsAltynJuldyz data={projectsAltynJuldyz} />
       </SwiperSlide>
       <SwiperSlide>
-        <ProjectsAltynJuldyz data={projectsAltynJuldyz} />
+        <AboutCompany data={aboutCompany} />
       </SwiperSlide>
       <SwiperSlide>
         <Values data={values} />

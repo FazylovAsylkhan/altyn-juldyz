@@ -1,0 +1,82 @@
+{
+  "lang": "en",
+  "url": "/",
+  "buttonLangs": [
+    { "text": "Ru", "url": "/contacts" },
+    { "text": "Kz", "url": "/contacts/kz" },
+    { "text": "En", "url": "/contacts/en" },
+    { "text": "Tr", "url": "/contacts/tr" }
+  ],
+  "seo": {
+    "title": "Contacts",
+    "h1": "Contacts"
+  },
+  "previewBlock": {
+    "title": "Contact information",
+    "description": "We are always in touch",
+    "image": "../../images/contacts/reception.jpg"
+  },
+  "info": {
+    "box1": {
+      "title": "Let's Cooperate!",
+      "description": "If you have any questions about cooperation, we will always be happy to contact you."
+    },
+    "box2": [
+      {
+        "title": "Our address",
+        "values": [
+          "Head office: 152 Bokeikhanov str., Almaty",
+          "Workshop: Irgeli village, Akzhol, 13/51"
+        ]
+      },
+      {
+        "title": "Opening hours",
+        "values": ["Mon-Fri: 10:00-18:00", "Sat: 10:00-15:00"]
+      },
+      {
+        "title": "Emails",
+        "values": ["info@goldenstar.kz", "a.janat@goldenstar.kz"]
+      },
+      {
+        "title": "Phones",
+        "values": [
+          "Head office: +7 (727) 317-85-49",
+          "Sales Department: +7 (775) 979-03-39",
+          "Sales Department: +7 (702) 481-39-49"
+        ]
+      }
+    ]
+  },
+  "forma": {
+    "title": "Write to us",
+    "description": "Fill out the form and we will contact you!",
+    "fields": [
+      { "title": "Your name", "errors": ["Required field"] },
+      {
+        "title": "Your phone number",
+        "errors": ["Required field", "Wrong number"]
+      },
+      {
+        "title": "Your email",
+        "errors": ["Required field", "Incorrect mail"]
+      },
+      {
+        "title": "Your message",
+        "errors": ["Required field"]
+      }
+    ],
+    "submitButton": "Send",
+    "modal": {
+      "title": "Thanks!",
+      "description": "Your message has been sent successfully!",
+      "closeButton": "OK"
+    },
+    "checker": {
+      "mainText": "I give my consent to the processing of personal data in accordance with ",
+      "link": {
+        "text": "privacy policy",
+        "url": "/"
+      }
+    }
+  }
+}

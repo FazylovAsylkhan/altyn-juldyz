@@ -2,9 +2,6 @@
   height: 100vh;
   width: 100%;
 }
-.important-background {
-  position: absolute !important;
-}
 .pageSlider > .swiper-pagination {
   left: 5% !important;
   width: fit-content !important;
@@ -31,7 +28,6 @@
   opacity: 0.7;
   border-radius: 50%;
   background-color: #ffffff;
-
 }
 .pageSlider__bullet_active {
   border: 1px solid #ffffff;
@@ -45,8 +41,8 @@
   border: 1px solid #182027;
 }
 
-@media (min-width: 2560px){
-  .pageSlider__bullet::after  {
+@media (min-width: 2560px) {
+  .pageSlider__bullet::after {
     width: 12px;
     height: 12px;
   }

@@ -1,0 +1,68 @@
+{
+  "lang": "tr",
+  "footerLinks": [
+    {
+      "text": "Konfeksiyon ve ayakkabı fabrikası",
+      "submenu": [
+        {
+          "text": "Logo çizimi",
+          "url": "https://gstools.kz/"
+        },
+        {
+          "text": "Ismarlama terzilik",
+          "url": "/developed-site"
+        }
+      ]
+    },
+    {
+      "text": "Tarım",
+      "submenu": [
+        {
+          "text": "«Aberdeen Angus» un yetiştirilmesi",
+          "url": "http://lakefarm.kz/"
+        },
+        {
+          "text": "Akhaltekin atlarının yetiştirilmesi",
+          "url": "http://altyn-teke.kz/"
+        },
+        {
+          "text": "Romanov koyunlarının yetiştirilmesi",
+          "url": "http://premiumlamb.kz/"
+        },
+        {
+          "text": "Alabalık yetiştiriciliği",
+          "url": "http://freshfish.kz/"
+        },
+        {
+          "text": "Yoğun elma Bahçeleri",
+          "url": "https://atekagro.kz/"
+        }
+      ]
+    },
+    {
+      "text": "Sitede gezinme",
+      "submenu": [
+        { "text": "Ana", "url": "/tr" },
+        { "text": "Hakkımızda", "url": "/about-us/tr" },
+        { "text": "Haber", "url": "/news/tr" },
+        {
+          "text": "Mağaza",
+          "url": "http://aforma.kz/"
+        },
+        {
+          "text": "Kariyer",
+          "url": "/career/tr"
+        },
+        {
+          "text": "Temaslar",
+          "url": "/contacts/tr"
+        }
+      ]
+    }
+  ],
+  "description": "Kazakistan'da ülkenin farklı sektörlerinin gelişimine büyük katkıda bulunan bir grup şirket",
+  "copyright": {
+    "rights": "Tüm hakları saklıdır",
+    "company": "TOO  “GOLDEN STAR CONSTRUCTION GROUP” 2023 ©"
+  }
+}

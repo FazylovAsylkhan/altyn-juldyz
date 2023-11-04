@@ -7,4 +7,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.important-background {
+  position: absolute !important;
+}

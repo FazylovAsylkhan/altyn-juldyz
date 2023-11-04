@@ -4,8 +4,8 @@
     {
       "text": "Компания",
       "submenu": [
-        { "text": "Біз туралы", "url": "/about-us" },
-        { "text": "Жаңалықтар", "url": "/news" }
+        { "text": "Біз туралы", "url": "/about-us/kz" },
+        { "text": "Жаңалықтар", "url": "/news/kz" }
       ]
     },
     {
@@ -58,11 +58,11 @@
     },
     {
       "text": "Мансап",
-      "url": "/career"
+      "url": "/career/kz"
     },
     {
       "text": "Байланыс",
-      "url": "/contacts"
+      "url": "/contacts/kz"
     }
   ],
   "buttonLangs": [

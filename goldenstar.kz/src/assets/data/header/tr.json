@@ -4,8 +4,8 @@
     {
       "text": "Şirket",
       "submenu": [
-        { "text": "Hakkımızda", "url": "/about-us" },
-        { "text": "Haber", "url": "/news" }
+        { "text": "Hakkımızda", "url": "/about-us/tr" },
+        { "text": "Haber", "url": "/news/tr" }
       ]
     },
     {
@@ -58,11 +58,11 @@
     },
     {
       "text": "Kariyer",
-      "url": "/career"
+      "url": "/career/tr"
     },
     {
       "text": "Temaslar",
-      "url": "/contacts"
+      "url": "/contacts/tr"
     }
   ],
   "buttonLangs": [

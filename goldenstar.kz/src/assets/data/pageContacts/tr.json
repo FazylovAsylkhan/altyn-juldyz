@@ -1,0 +1,82 @@
+{
+  "lang": "tr",
+  "url": "/",
+  "buttonLangs": [
+    { "text": "Ru", "url": "/contacts" },
+    { "text": "Kz", "url": "/contacts/kz" },
+    { "text": "En", "url": "/contacts/en" },
+    { "text": "Tr", "url": "/contacts/tr" }
+  ],
+  "seo": {
+    "title": "Temaslar",
+    "h1": "Temaslar"
+  },
+  "previewBlock": {
+    "title": "İletişim bilgileri",
+    "description": "Her zaman irtibattayız",
+    "image": "../../images/contacts/reception.jpg"
+  },
+  "info": {
+    "box1": {
+      "title": "Hadi işbirliği yapalım!",
+      "description": "İşbirliği ile ilgili herhangi bir sorunuz varsa, sizinle her zaman iletişime geçmekten memnuniyet duyarız."
+    },
+    "box2": [
+      {
+        "title": "Adresimiz",
+        "values": [
+          "Merkez ofisi: Almatı şehri, Bokeyhanova Caddesi 152",
+          "Atölye: S. Irgeli, Akyol, 13/51"
+        ]
+      },
+      {
+        "title": "Çalışma saatleri",
+        "values": ["Pazartesi-Cuma: 10:00-18:00", "Cts: 10:00-15:00"]
+      },
+      {
+        "title": "E-posta",
+        "values": ["info@goldenstar.kz", "a.janat@goldenstar.kz"]
+      },
+      {
+        "title": "Telefonlar",
+        "values": [
+          "Merkez Ofisi: +7 (727) 317-85-49",
+          "Satış departmanı: +7 (775) 979-03-39",
+          "Satış departmanı: +7 (702) 481-39-49"
+        ]
+      }
+    ]
+  },
+  "forma": {
+    "title": "Bize yaz",
+    "description": "Formu doldurun ve sizinle iletişime geçeceğiz!",
+    "fields": [
+      { "title": "Adınız", "errors": ["Zorunlu alan"] },
+      {
+        "title": "Telefonunuz",
+        "errors": ["Zorunlu alan", "Yanlış numara"]
+      },
+      {
+        "title": "Postanız",
+        "errors": ["Zorunlu alan", "Yanlış posta"]
+      },
+      {
+        "title": "Mesajınız",
+        "errors": ["Zorunlu alan"]
+      }
+    ],
+    "submitButton": "Göndermek",
+    "modal": {
+      "title": "Teşekkürler!",
+      "description": "Mesajınız başarıyla gönderildi!",
+      "closeButton": "OK"
+    },
+    "checker": {
+      "mainText": "Kişisel verilerin uygun şekilde işlenmesine izin veriyorum ",
+      "link": {
+        "text": "Gizlilik Politikası",
+        "url": "/"
+      }
+    }
+  }
+}

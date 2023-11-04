@@ -1,0 +1,68 @@
+{
+  "lang": "ru",
+  "footerLinks": [
+    {
+      "text": "Швейно-обувная фабрика",
+      "submenu": [
+        {
+          "text": "Нанесение логотипа",
+          "url": "https://gstools.kz/"
+        },
+        {
+          "text": "Пошив на заказ",
+          "url": "/developed-site"
+        }
+      ]
+    },
+    {
+      "text": "Сельское хозяйство",
+      "submenu": [
+        {
+          "text": "Разведение «Абердин Ангус»",
+          "url": "http://lakefarm.kz/"
+        },
+        {
+          "text": "Разведение Ахалтекинских лошадей",
+          "url": "http://altyn-teke.kz/"
+        },
+        {
+          "text": "Разведение Романовских овец",
+          "url": "http://premiumlamb.kz/"
+        },
+        {
+          "text": "Разведение Форелей",
+          "url": "http://freshfish.kz/"
+        },
+        {
+          "text": "Интенсивные яблоневые сады",
+          "url": "https://atekagro.kz/"
+        }
+      ]
+    },
+    {
+      "text": "Навигация по сайту",
+      "submenu": [
+        { "text": "Главная", "url": "/" },
+        { "text": "О нас", "url": "/about-us" },
+        { "text": "Новости", "url": "/news" },
+        {
+          "text": "Магазин",
+          "url": "http://aforma.kz/"
+        },
+        {
+          "text": "Карьера",
+          "url": "/career"
+        },
+        {
+          "text": "Контакты",
+          "url": "/contacts"
+        }
+      ]
+    }
+  ],
+  "description": "Группа компаний в Казахстане, вносящая огромный вклад в развитие разных отраслей страны",
+  "copyright": {
+    "rights": "Все права защищены",
+    "company": "ТОО  “GOLDEN STAR CONSTRUCTION GROUP” 2023 ©"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "lang": "en",
+  "footerLinks": [
+    {
+      "text": "Sewing and shoe factory",
+      "submenu": [
+        {
+          "text": "Applying the logo",
+          "url": "https://gstools.kz/"
+        },
+        {
+          "text": "Custom tailoring",
+          "url": "/developed-site"
+        }
+      ]
+    },
+    {
+      "text": "Agricultural industry",
+      "submenu": [
+        {
+          "text": "Breeding  «Аberdeen Angus»",
+          "url": "http://lakefarm.kz/"
+        },
+        {
+          "text": "Breeding of Akhal-Teke horses",
+          "url": "http://altyn-teke.kz/"
+        },
+        {
+          "text": "Breeding of Romanov sheep",
+          "url": "http://premiumlamb.kz/"
+        },
+        {
+          "text": "Trout Breeding",
+          "url": "http://freshfish.kz/"
+        },
+        {
+          "text": "Intensive apple orchards",
+          "url": "https://atekagro.kz/"
+        }
+      ]
+    },
+    {
+      "text": "Site navigation",
+      "submenu": [
+        { "text": "Main", "url": "/en" },
+        { "text": "About us", "url": "/about-us/en" },
+        { "text": "News", "url": "/news/en" },
+        {
+          "text": "Shop",
+          "url": "http://aforma.kz/"
+        },
+        {
+          "text": "Career",
+          "url": "/career/en"
+        },
+        {
+          "text": "Contacts",
+          "url": "/contacts/en"
+        }
+      ]
+    }
+  ],
+  "description": "A group of companies in Kazakhstan, making a huge contribution to the development of various sectors of the country",
+  "copyright": {
+    "rights": "All rights reserved",
+    "company": "ТОО  “GOLDEN STAR CONSTRUCTION GROUP” 2023 ©"
+  }
+}

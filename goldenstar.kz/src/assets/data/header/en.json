@@ -4,8 +4,8 @@
     {
       "text": "Company",
       "submenu": [
-        { "text": "About us", "url": "/about-us" },
-        { "text": "News", "url": "/news" }
+        { "text": "About us", "url": "/about-us/en" },
+        { "text": "News", "url": "/news/en" }
       ]
     },
     {
@@ -61,11 +61,11 @@
     },
     {
       "text": "Career",
-      "url": "/career"
+      "url": "/career/en"
     },
     {
       "text": "Contacts",
-      "url": "/contacts"
+      "url": "/contacts/en"
     }
   ],
   "buttonLangs": [

@@ -5,7 +5,8 @@ import { VerticalSubMenu } from 'common/components/subMenu';
 import { ButtonLang } from 'common/components/button';
 
 interface HeaderProps {
-  isLight: boolean;
+  isLight?: boolean;
+  isFixed?: boolean;
   lang: string;
   buttonLangs: [{ text: string; url: string }];
   links: [
@@ -29,15 +30,15 @@ interface HeaderProps {
 }
 
 export function Header(props: HeaderProps): React.JSX.Element {
-  const { isLight, links, buttonLangs, lang } = props;
+  const { isLight, links, buttonLangs, lang, isFixed } = props;
   const [isShownButtonLang, setIsShownButtonLang] = React.useState(false);
   const [isShownMenuLang, setIsShownMenuLang] = React.useState(false);
 
   return (
     <header
-      className={`iMac:py-7 fixed left-0 top-0 z-10 h-fit w-screen border-b-2 border-transparent py-5 ${
+      className={`iMac:py-7 left-0 top-0 z-10 h-fit w-full border-b-2 border-transparent py-5 ${
         isLight ? 'bg-white hover:border-[#E5E5E5]' : 'hover:bg-softBlack'
-      }`}
+      } ${isFixed ? 'fixed' : 'absolute'}`}
       onMouseMove={() => setIsShownButtonLang(true)}
       onMouseLeave={() => {
         setIsShownButtonLang(false);

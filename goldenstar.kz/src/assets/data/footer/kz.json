@@ -1,0 +1,68 @@
+{
+  "lang": "kz",
+  "footerLinks": [
+    {
+      "text": "Тігін және аяқ киім фабрикасы",
+      "submenu": [
+        {
+          "text": "Логотипті қолдану",
+          "url": "https://gstools.kz/"
+        },
+        {
+          "text": "Тапсырыс бойынша тігу",
+          "url": "/developed-site"
+        }
+      ]
+    },
+    {
+      "text": "Ауыл шаруашылығы",
+      "submenu": [
+        {
+          "text": "«Абердин Ангус» өсіру",
+          "url": "http://lakefarm.kz/"
+        },
+        {
+          "text": "Ахалтеке жылқыларын өсіру",
+          "url": "http://altyn-teke.kz/"
+        },
+        {
+          "text": "Романов қойларын өсіру",
+          "url": "http://premiumlamb.kz/"
+        },
+        {
+          "text": "Форель өсіру",
+          "url": "http://freshfish.kz/"
+        },
+        {
+          "text": "Қарқынды алма бақтары",
+          "url": "https://atekagro.kz/"
+        }
+      ]
+    },
+    {
+      "text": "Сайтты шарлау",
+      "submenu": [
+        { "text": "Басты бет", "url": "/kz" },
+        { "text": "Біз туралы", "url": "/about-us/kz" },
+        { "text": "Жаңалықтар", "url": "/news/kz" },
+        {
+          "text": "Дүкен",
+          "url": "http://aforma.kz/"
+        },
+        {
+          "text": "Мансап",
+          "url": "/career/kz"
+        },
+        {
+          "text": "Байланыс",
+          "url": "/contacts/kz"
+        }
+      ]
+    }
+  ],
+  "description": "Еліміздің түрлі салаларының дамуына зор үлес қосатын Қазақстандағы компаниялар тобы",
+  "copyright": {
+    "rights": "Барлық құқықтар қорғалған",
+    "company": "ЖШС  “GOLDEN STAR CONSTRUCTION GROUP” 2023 ©"
+  }
+}

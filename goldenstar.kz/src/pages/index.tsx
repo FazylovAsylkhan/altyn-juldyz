@@ -13,7 +13,7 @@ import {
   OnlineShop,
   Values,
   ProjectsAltynJuldyz,
-} from 'common/blocks/main';
+} from 'common/blocks/main/';
 import { Header } from 'common/components/share';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -59,6 +59,7 @@ const IndexPage = (
       }}>
       <Header
         lang={lang}
+        isFixed
         links={links}
         buttonLangs={buttonLangs}
         isLight={isLight}
@@ -76,10 +77,10 @@ const IndexPage = (
         <OnlineShop data={onlineShop} />
       </SwiperSlide>
       <SwiperSlide>
-        <AboutCompany data={aboutCompany} />
+        <ProjectsAltynJuldyz data={projectsAltynJuldyz} />
       </SwiperSlide>
       <SwiperSlide>
-        <ProjectsAltynJuldyz data={projectsAltynJuldyz} />
+        <AboutCompany data={aboutCompany} />
       </SwiperSlide>
       <SwiperSlide>
         <Values data={values} />
